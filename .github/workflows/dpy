@@ -1,0 +1,9 @@
+name: DPy
+on: [push]
+jobs:
+  smell-detection:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DesigniteTools/dpy-action@v1
+        # check the marketplace page for exact version/inputs
